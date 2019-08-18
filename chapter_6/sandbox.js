@@ -1,3 +1,4 @@
+/*
 const para = document.querySelector('p');
 console.log(para);
 
@@ -44,3 +45,24 @@ const titleH1 = document.querySelector('h1');
 titleH1.style.margin = '50px';
 titleH1 .style.color = 'crimson';
 titleH1.style.fontSize = '60px';
+*/
+
+//===========
+// Lecture 51
+//===========
+/*
+const content = document.querySelector('p');
+console.log(content.classList);
+content.classList.add('success');
+console.log(content.classList);
+*/
+const paras = document.querySelectorAll('p');
+paras.forEach(p=>{
+    if(p.textContent.includes('error')){
+        p.classList.add('error');
+    }
+    if(p.textContent.includes('success')){
+        p.classList.add('success');
+    }
+});
+
