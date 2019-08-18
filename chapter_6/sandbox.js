@@ -40,4 +40,7 @@ parasss.innerText = 'Ninjas are awesome';
 const content = document.querySelector('.content');
 content.innerHTML = `<h2> THIS IS A NEW H2</H2>`;
 
-const title = document.querySelector('h1');
+const titleH1 = document.querySelector('h1');
+titleH1.style.margin = '50px';
+titleH1 .style.color = 'crimson';
+titleH1.style.fontSize = '60px';
