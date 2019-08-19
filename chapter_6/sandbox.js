@@ -66,3 +66,36 @@ paras.forEach(p=>{
     }
 });
 
+//===========
+// Lecture 52
+//===========
+const article = document.querySelector('article');
+
+article_array = Array.from(article.children);
+console.log(article_array);
+
+article_array.forEach(child =>{
+    child.classList.add('article-element');
+});
+
+const title = document.querySelector('h2');
+console.log(title.parentElement);
+console.log(title.nextElementSibling);
+console.log("Here"); 
+
+//===========
+// Lecture 53
+//===========
+const button = document.querySelector('button');
+button.addEventListener('click',()=>{
+    console.log('You clicked me')
+});
+
+const items = document.querySelectorAll('li');
+
+items.forEach(item => {
+    item.addEventListener('click', e =>{
+        console.log(e.target);
+        e.target.style.textDecoration = 'line-through';
+    });
+});

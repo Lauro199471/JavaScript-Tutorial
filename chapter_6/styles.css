@@ -9,3 +9,12 @@
     color: limegreen;
     border: 1px dotted limegreen;
 }
+
+li{
+    list-style: none;
+    max-width: 200px;
+    padding: 8x;
+    margin: 8x auto;
+    background: #eeeeee;
+    border: 1px dotted #dddddd;
+}
